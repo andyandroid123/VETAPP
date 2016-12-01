@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.administrador.vetapp.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="VetApp 1.0"
+        android:id="@+id/textView"
+        android:layout_centerHorizontal="true"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Scan"
+        android:id="@+id/bt_scan"
+        android:drawableTop="@mipmap/barra"
+        android:layout_marginTop="73dp"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Servicios"
+        android:id="@+id/bt_servicio"
+        android:layout_alignTop="@+id/bt_scan"
+        android:layout_alignRight="@+id/textView"
+        android:layout_alignEnd="@+id/textView"
+        android:textColor="@color/abc_search_url_text_normal"
+        android:drawableTop="@mipmap/shop_help"
+        android:onClick="servicios" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mascotas"
+        android:id="@+id/bt_mascota"
+        android:drawableTop="@mipmap/shop_products"
+
+        android:layout_alignTop="@+id/bt_servicio"
+        android:layout_toRightOf="@+id/bt_servicio"
+        android:layout_toEndOf="@+id/bt_servicio" />
+</RelativeLayout>
