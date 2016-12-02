@@ -7,4 +7,8 @@
     <string name="btnServicios">Servicios</string>
     <string name="btnAcerca">Acerca</string>
     <string name="btnSalir">Salir</string>
+    <string name="title_activity_splash_screen">SplashScreenActivity</string>
+
+    <!-- SplashScreen -->
+    <string name="lbl_version">Versión 1.0</string>
 </resources>
