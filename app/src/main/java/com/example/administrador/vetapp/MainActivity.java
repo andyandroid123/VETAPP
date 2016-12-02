@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        scan_bt = (Button) findViewById(R.id.bt_scan);
+        /*scan_bt = (Button) findViewById(R.id.bt_scan);
         final Activity activity = this;
         scan_bt.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
         });
         // ATTENTION: This was auto-generated to implement the App Indexing API.
         // See https://g.co/AppIndexing/AndroidStudio for more information.
-        client = new GoogleApiClient.Builder(this).addApi(AppIndex.API).build();
+        client = new GoogleApiClient.Builder(this).addApi(AppIndex.API).build();*/
     }
 
     @Override
@@ -64,7 +64,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    @Override
+   /* @Override
     public void onStart() {
         super.onStart();
 
@@ -82,9 +82,9 @@ public class MainActivity extends AppCompatActivity {
                 Uri.parse("android-app://com.example.administrador.vetapp/http/host/path")
         );
         AppIndex.AppIndexApi.start(client, viewAction);
-    }
+    }*/
 
-    @Override
+   /* @Override
     public void onStop() {
         super.onStop();
 
@@ -102,7 +102,7 @@ public class MainActivity extends AppCompatActivity {
         );
         AppIndex.AppIndexApi.end(client, viewAction);
         client.disconnect();
-    }
+    }*/
 
 
 

@@ -1,3 +1,10 @@
 <resources>
-    <string name="app_name">VETAPP</string>
+    <string name="app_name">VetApp</string>
+
+    <!--Menu principal-->
+
+    <string name="btnMascotas">Mascotas</string>
+    <string name="btnServicios">Servicios</string>
+    <string name="btnAcerca">Acerca</string>
+    <string name="btnSalir">Salir</string>
 </resources>
