@@ -1,9 +1,11 @@
-package com.example.administrador.vetapp;
+package com.example.administrador.vetapp.Actividades;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.v7.app.ActionBarActivity;
+
+import com.example.administrador.vetapp.R;
 
 public class SplashScreenActivity extends ActionBarActivity{
 

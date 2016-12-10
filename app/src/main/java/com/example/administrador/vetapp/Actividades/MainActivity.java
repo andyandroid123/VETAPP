@@ -1,24 +1,20 @@
-package com.example.administrador.vetapp;
+package com.example.administrador.vetapp.Actividades;
 
-import android.app.Activity;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
+import android.view.KeyEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
-import com.google.android.gms.appindexing.Action;
-import com.google.android.gms.appindexing.AppIndex;
+import com.example.administrador.vetapp.R;
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.zxing.integration.android.IntentIntegrator;
 import com.google.zxing.integration.android.IntentResult;
-
-import static android.R.attr.button;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
     private Button scan_bt;
@@ -152,8 +148,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
     }
 
+    @Override
+    public boolean onKeyDown(int keyCode, KeyEvent event) {
+        if(keyCode == KeyEvent.KEYCODE_BACK){}
+        return false;
+    }
 
-   /* @Override
+
+    /* @Override
     public void onStart() {
         super.onStart();
 

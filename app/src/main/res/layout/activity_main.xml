@@ -5,13 +5,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingTop="30dp"
-    tools:context="com.example.administrador.vetapp.MainActivity">
+    tools:context="com.example.administrador.vetapp.Actividades.MainActivity">
 
     <TableLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:paddingTop="30dp"
-        tools:context="com.example.administrador.vetapp.MainActivity">
+        tools:context="com.example.administrador.vetapp.Actividades.MainActivity">
 
 
         <TableRow
