@@ -3,6 +3,9 @@
     package="com.example.administrador.vetapp">
 
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+
 
     <application
         android:allowBackup="true"
@@ -14,6 +17,18 @@
 
         <activity
             android:name=".Actividades.MainActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".Actividades.Container"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".Actividades.MascotasActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".barcode.BarcodeCaptureActivity"
             android:screenOrientation="portrait"/>
 
         <activity

@@ -11,4 +11,15 @@
 
     <!-- SplashScreen -->
     <string name="lbl_version">Versión 1.0</string>
+
+    <!-- Strings relacionados con el MainActivity-->
+    <string name="lbl_datos_mascota">Datos de la mascota</string>
+    <string name="lbl_codigo_mascota">Código:</string>
+    <string name="lbl_nombre_mascota">Nombre:</string>
+    <string name="hint_codigo_mascota">ingrese código:</string>
+    <string name="btn_escanear_codigo">SCANNER</string>
+    <string name="btn_buscar_mascota">BUSCAR</string>
+
+
+
 </resources>

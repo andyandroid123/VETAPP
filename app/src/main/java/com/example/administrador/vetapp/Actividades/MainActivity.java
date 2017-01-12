@@ -20,6 +20,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button scan_bt;
 
     private Button btnMascotas, btnServicios, btnAcerca, btnSalir;
+    String nombreFragmento;
 
     /**
      * ATTENTION: This was auto-generated to implement the App Indexing API.
@@ -42,24 +43,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btnAcerca.setOnClickListener(this);
         btnSalir.setOnClickListener(this);
 
-        /*scan_bt = (Button) findViewById(R.id.bt_scan);
-        final Activity activity = this;
-        scan_bt.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                IntentIntegrator integrator = new IntentIntegrator(activity);
-                integrator.setDesiredBarcodeFormats(IntentIntegrator.QR_CODE_TYPES);
-                integrator.setPrompt("Scan");
-                integrator.setCameraId(0);
-                integrator.setBeepEnabled(false);
-                integrator.setBarcodeImageEnabled(false);
-                integrator.initiateScan();
-
-            }
-        });
-        // ATTENTION: This was auto-generated to implement the App Indexing API.
-        // See https://g.co/AppIndexing/AndroidStudio for more information.
-        client = new GoogleApiClient.Builder(this).addApi(AppIndex.API).build();*/
     }
 
     @Override
@@ -80,34 +63,22 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public void onClick(View view) {
+
         switch(view.getId())
         {
             case R.id.btnMascotas:
 
-                Snackbar.make(view, "En desarrollo", Snackbar.LENGTH_LONG)
-                        .setActionTextColor(getResources().getColor(R.color.blanco))
-                        /*.setAction("SI", new View.OnClickListener() {
-                            @Override
-                            public void onClick(View view) {
-                                finish();
-                            }
-                        })*/
-                        .show();
-
+                nombreFragmento = "mascotas";
+                Intent intent = new Intent(this, MascotasActivity.class);
+                startActivity(intent);
                 break;
+
             case R.id.btnServicios:
 
-                Snackbar.make(view, "En desarrollo", Snackbar.LENGTH_LONG)
-                        .setActionTextColor(getResources().getColor(R.color.blanco))
-                        /*.setAction("SI", new View.OnClickListener() {
-                            @Override
-                            public void onClick(View view) {
-                                finish();
-                            }
-                        })*/
-                        .show();
-
+                nombreFragmento = "servicios";
+                iniciarContainer(nombreFragmento);
                 break;
+
             case R.id.btnAcerca:
 
                 AlertDialog.Builder alert = new AlertDialog.Builder(MainActivity.this);
@@ -146,6 +117,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             default:
                 break;
         }
+    }
+
+    void iniciarContainer(String nomFrag)
+    {
+        Intent intent = new Intent(getApplicationContext(), Container.class);
+        intent.putExtra("fragmento", nomFrag);
+        startActivity(intent);
     }
 
     @Override
